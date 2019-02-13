@@ -1,0 +1,11 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+    width: 70px;
+    padding: 5px;
+    border-radius: 15px;
+    flex-direction: column;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+}

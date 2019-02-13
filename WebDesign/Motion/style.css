@@ -1,0 +1,104 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.7);
+    width: 60px;
+    height: 500px;
+    margin: 5px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.p1 {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.p3 {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+body {
+    background: url(science.png) no-repeat center fixed;
+    background-size: cover;
+    margin-left: 110px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Tangerine', cursive; 
+    font-size: 30px;
+    color: rgb(0, 246, 246);
+}
+
+table {
+    border: 5px solid whitesmoke; 
+    box-shadow: 3px 3px 5px black;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+ul {
+    text-align: left;
+}
+
+ol {
+    text-align: left;
+}
+
+video {
+    width: 95%; 
+    text-align: center;
+    opacity: 1;
+    padding: 5px;
+}
+
+h3 {
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.852);
+}
+
+a:link {
+    text-decoration: none;
+    color: grey;
+    opacity: 1;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(88, 89, 93);
+    opacity: 1;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: 15vw; 
+    height: 15vw; 
+    transition: .2s;
+}
+
+img:hover {
+    width: 30%;
+    height: 30%;
+    box-shadow: 10px 10px;
+    border-radius: 5px;
+}
