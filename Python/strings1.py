@@ -1,0 +1,7 @@
+print ('Cha-ching')
+print ("Cha-ching".upper())
+print ('IM NOT SHOUTING'.lower())
+print (len('supercalifragilisticexpialidocious'))
+print ('wow'+'mom')
+print ('i really like programming'.capitalize())
+print ('Astounding aardvarks, arguably an ancient animal, always ate apples and acorns and artichokes all around Athens, amazing!' .replace('A','O').replace('a','o'))

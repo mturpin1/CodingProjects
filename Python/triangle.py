@@ -1,0 +1,15 @@
+import turtle
+turtle.color('orange')
+turtle.penup()
+turtle.goto(-150 , 0)
+turtle.pendown()
+turtle.begin_fill()
+for x in range(3):
+    turtle.forward(300)
+    turtle.left(120)
+turtle.end_fill()
+turtle.left(90)
+turtle.penup()
+turtle.goto(0 , 100)
+turtle.color('black')
+turtle.exitonclick()

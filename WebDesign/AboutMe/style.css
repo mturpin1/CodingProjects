@@ -1,0 +1,103 @@
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.705);
+}
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 75pt;
+    color: rgb(4, 0, 255);
+    text-align: center;
+    text-shadow: 10px 10px 10px black;
+}
+
+p {
+    text-align: center;
+    margin-left: 5%;
+}
+
+body {
+    margin-left: 80px; 
+    background-image: url('electicity.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+a {
+    color: #2359ce;
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;font-size: 25px;font-style: bold;
+}
+p {
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+}
+
+th {
+    border: 1px solid black;}
+
+td {
+    border: 1px solid black;
+}
+
+ul {
+    text-align: left;
+}
+
+ol {
+    text-align: left;
+}
+
+video {
+    width: 32.999%;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px; 
+    box-shadow: 3px 3px;
+    align-content: center;
+    transition: .2s;
+}
+
+img:hover {
+    width: 30%;
+    height: 30%;
+}
+
+h3 {
+    text-shadow: 2px 2px 2px red;
+}
+
+#buttons {
+    background: rgba(116, 109, 111, 1);
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 5vw;
+    box-shadow: 5px 5px 10px black;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    border-radius: 15px;
+}
+
+#list {
+    font-family: "Montserrat", cursive;
+    text-align: center;
+}
+
+#info {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
