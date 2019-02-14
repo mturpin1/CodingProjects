@@ -52,12 +52,7 @@ li.dropdown {
     display: block;
 }
 
-img {
-    height: 25vh;
-    width: 100vw;
-    margin: 5vw;
-}
-
-body {
-    align-content: center;
+.menu {
+    position: fixed;
+    width: 75vw;
 }
