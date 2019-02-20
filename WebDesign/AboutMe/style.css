@@ -12,9 +12,10 @@ div.wrapper {
 h1 {
     font-family: 'Tangerine', cursive;
     font-size: 75pt;
-    color: rgb(4, 0, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     text-shadow: 10px 10px 10px black;
+    text-shadow: 2px 2px 2px 2px white;
 }
 
 p {
@@ -43,10 +44,13 @@ p {
 }
 
 th {
-    border: 1px solid black;}
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 td {
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 ul {
@@ -123,4 +127,8 @@ a:hover {
     margin: 5px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px;
+}
+
+table {
+    border-radius: 5px;
 }
