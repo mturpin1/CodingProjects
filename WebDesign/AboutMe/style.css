@@ -101,3 +101,15 @@ h3 {
     font-family: 'Bubblegum Sans', cursive;
 }
 
+a {
+    color: grey;
+}
+
+a:hover {
+    color: blue;
+}
+
+.info {
+    display: block;
+    justify-content: center;
+}
