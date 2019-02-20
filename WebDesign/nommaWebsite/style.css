@@ -7,8 +7,8 @@ ul {
     justify-content:  space-evenly;
     display: flex;
     flex-direction: row;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 
 }
 
@@ -46,7 +46,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: grey;
 }
 
 .dropdown:hover .dropdown-content {
@@ -55,8 +55,8 @@ li.dropdown {
 
 .menu {
     position: fixed;
-    width: 90vw;
-    top: 37vh;
+    width: 98vw;
+    top: 36vh;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -68,17 +68,29 @@ li.dropdown {
 
 .logo {
     position: fixed;
-    height: 35vh;
+    height: 32vh;
     width: 75vw;
     border: solid black;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 5px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    opacity: 1;
+}
+
+.marine_logo {
+    height: 150px;
+    width: 155px;
+    margin-top: 320px;
 }
 
 body {
     background-color: #CBA949;
+}
+
+.text {
+    margin-left: 180px;
+    margin-top: -150px;
+    font-family: 'Allerta Stencil', sans-serif;
 }
