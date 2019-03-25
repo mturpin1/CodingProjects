@@ -11,10 +11,10 @@ function fizzbuzz(num) {
 }
 
 
-document.getElementById('submit').addEventListener('click', function() {
-    let newNum = document.getElementById('fizzboi').value
+$('#submit').click(function() {
+    let newNum = $('#fizzboi').val()
     let fb_result = fizzbuzz(newNum)
-    document.getElementById('result').innerHTML = `${newNum} results in ${fb_result}`
+    $('#result').html(`${newNum} results in ${fb_result}`)
 })
 
 /* when the button is clicked fire a function */
