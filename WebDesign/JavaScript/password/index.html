@@ -1,30 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    
     <title>Login</title>
-  </head>
-  <body>
-    <input id="fullName" placeholder="Full Name"></input>
-    <input id="username" placeholder="Username"></input>
-    <input id="password" placeholder="Password"></input>
-    <input id="confirmPassword" placeholder="Confirm Password"></input>
-    <button type="button" class="btn btn-primary">Submit</button>
-    <span class="text-danger" id="boxFill"></span>
-    <span class="text-danger" id="passwordMatch"></span>
-    <span class="text-danger" id="passwordLength"></span>
-    <span class="text-danger" id="passwordContains">Your password must include at least one number.</span>
-    <span class="text-danger" id="Success">You did it! Thanks for signing up!</span>
+</head>
+<body>
+    <input id="fullName" placeholder="Full Name" class='form-control m-3 w-50'></input> <br>
+    <input id="username" placeholder="Username" class='form-control m-3 w-50'></input> <br>
+    <input id="password" placeholder="Password" class='form-control m-3 w-50'></input> <br>
+    <input id="confirmPassword" placeholder="Confirm Password" class='form-control m-3 w-50'></input><br>
+    <button type="button" class="btn btn-primary m-3" id='submitBoi'>Submit</button><br>
+    <span class="text-danger m-3" id="boxFill">You forgot to fill something in.</span><br>
+    <span class="text-danger m-3" id="passwordMatch">Your passwords don't match.</span><br>
+    <span class="text-danger m-3" id="passwordLength">Your password isn't long enough.</span><br>
+    <span class="text-danger m-3" id="passwordContains">Your password must include at least one number.</span>
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
