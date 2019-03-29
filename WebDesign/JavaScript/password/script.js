@@ -12,7 +12,7 @@ function containsNum(word) {
     // for loop, check each character, if it's a number, break the loop word.charAt()
     let hasNum
     if (word === undefined) {
-        return false
+        return true
     } else {
         for (i = 0; i < word.length; i++) {
             if (isNaN(word.charAt(i)) ) {
@@ -49,10 +49,10 @@ $('#submitBoi').click(function() {
         $('#passwordLength').show()
     }
     
-    if (containsNum()) {
-        $('#passwordContains').show()
-    } else {
+    if (containsNum($('#password').val())) {
         $('#passwordContains').hide()
+    } else {
+        $('#passwordContains').show()
     }
     
     if (passMatch()) {
@@ -66,8 +66,13 @@ $('#submitBoi').click(function() {
     } else {
         $('#boxFill').show()
     }
-    // if (all functions return whatever they're supposed to) { alert() }
+
+    if (lengthGood() && containsNum($('#password').val()) && passMatch() && boxesFilled()) {
+        alert('Congratulations, you have successfully filled out the form. Thanks for signing up!')
+        $('body').html("<div class='m-5 text-danger text-center'>WELCOME TO HELL</div>")
+        $('body').animate({
+            'font-size': '75'
+        }, 1500)
+    }
 })
-if (lengthGood === true && containsNum === true && passMatch === true && boxesFilled === true) {
-    alert('Congratulations, you have successfully filled out the form. Thanks for signing up!')
-}
+
