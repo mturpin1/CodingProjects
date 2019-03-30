@@ -49,10 +49,10 @@ $('#submitBoi').click(function() {
         $('#passwordLength').show()
     }
     
-    if (containsNum()) {
-        $('#passwordContains').show()
-    } else {
+    if (containsNum($('#password'))) {
         $('#passwordContains').hide()
+    } else {
+        $('#passwordContains').show()
     }
     
     if (passMatch()) {
