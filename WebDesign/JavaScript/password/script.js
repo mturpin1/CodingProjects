@@ -12,7 +12,7 @@ function containsNum(word) {
     // for loop, check each character, if it's a number, break the loop word.charAt()
     let hasNum
     if (word === undefined) {
-        return false
+        return true
     } else {
         for (i = 0; i < word.length; i++) {
             if (isNaN(word.charAt(i)) ) {
@@ -68,6 +68,6 @@ $('#submitBoi').click(function() {
     }
     // if (all functions return whatever they're supposed to) { alert() }
 })
-if (lengthGood === true && containsNum === true && passMatch === true && boxesFilled === true) {
+if (lengthGood() && containsNum('#password') && passMatch() && boxesFilled()) {
     alert('Congratulations, you have successfully filled out the form. Thanks for signing up!')
 }
