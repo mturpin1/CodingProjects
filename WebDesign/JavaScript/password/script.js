@@ -49,7 +49,7 @@ $('#submitBoi').click(function() {
         $('#passwordLength').show()
     }
     
-    if (containsNum($('#password'))) {
+    if (containsNum($('#password').val())) {
         $('#passwordContains').hide()
     } else {
         $('#passwordContains').show()
@@ -66,8 +66,13 @@ $('#submitBoi').click(function() {
     } else {
         $('#boxFill').show()
     }
-    // if (all functions return whatever they're supposed to) { alert() }
+    
+    if (lengthGood() && containsNum($('#password').val()) && passMatch() && boxesFilled()) {
+        alert('Congratulations, you have successfully filled out the form. Thanks for signing up!')
+        $('body').html("<div class='m-5 text-danger text-center' >WELCOME TO HELL</div>")
+        $('body').animate({
+            'font-size': '75'
+        }, 1500)
+    }
 })
-if (lengthGood() && containsNum('#password') && passMatch() && boxesFilled()) {
-    alert('Congratulations, you have successfully filled out the form. Thanks for signing up!')
-}
+
