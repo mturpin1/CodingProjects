@@ -1,0 +1,175 @@
+Creative Coding
+A3/A4
+Stream
+Classwork
+People
+Creative Coding
+A3/A4
+Upcoming
+Woohoo, no work due soon!
+View all
+
+Announcement: "(April 8) Tic Tac Toe Code-Along --…"
+Topher McKee
+Created 7:43 AM7:43 AM
+(April 8) Tic Tac Toe Code-Along -- Copy and paste these files
+
+index.html
+
+script.js
+
+Announcement: "Completed FizzBuzz"
+Topher McKee
+Created Mar 21Mar 21
+Completed FizzBuzz
+Dropbox - fizzbuzz - Simplify your life
+
+Announcement: "Download and unzip this folder"
+Topher McKee
+Created Mar 21Mar 21
+Download and unzip this folder
+Dropbox - jQueryPractice - Simplify your life
+
+Announcement: "Sign Up index.html file"
+Topher McKee
+Created Feb 28Feb 28
+Sign Up index.html file
+
+index.html
+
+Announcement: "ADD TO YOUR FILE -- copy this code at…"
+Topher McKee
+Created Feb 22Feb 22
+ADD TO YOUR FILE -- copy this code at the bottom of your body
+
+copy.html
+
+Announcement: "Fixed Nav Bar Example"
+Topher McKee
+Created Feb 14Feb 14
+Fixed Nav Bar Example
+Fixed Nav Bar
+
+Announcement: "Left Nav Bar Example"
+Topher McKee
+Created Feb 14Feb 14 (Edited Feb 14)
+Left Nav Bar Example
+Left Fixed Nav Bar
+
+Announcement: "Font for code-along (download and move…"
+Topher McKee
+Created Jan 31Jan 31 (Edited Jan 31)
+Font for code-along (download and move to your sandbox folder // you might need to open in a new window)
+
+AvenirNextCondensed-Bold.otf
+
+<html>
+
+<head>
+    <title>jQuery Tic Tac Toe</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: #605;
+            animation: background-shimmer 5s forwards infinite;
+        }
+        
+        #board {
+            width: 70%;
+            height: 70%;
+            max-width: 700px;
+            max-height: 700px;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            justify-content: space-between;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .cell {
+            margin: 0;
+            padding: 0;
+            height: 30%;
+            width: 30%;
+            background-color: #605;
+            animation: background-shimmer 5s forwards infinite;
+            /* text */
+            display: flex;
+            font-family: "Roboto";
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+            font-size: 10vw;
+            font-weight: bold;
+            color: #D3BC8D;
+        }
+        
+        #message {
+            position: absolute;
+            width: 100%;
+            font-family: "Roboto";
+            height: 100%;
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+            font-size: 40pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            pointer-events: none;
+            text-shadow:
+            -0px -0px 10px white,  
+            0px -0px 10px white,
+            -0px 0px 10px white,
+            0px 0px 10px white;
+        }
+        
+        @keyframes background-shimmer {
+            0% { background-color: #464646 }
+            50% { background-color: #575757 }
+            100% { background-color: #464646 }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="board">
+        <div class="row">
+            <div id="0-0" class="cell"></div>
+            <div id="1-0" class="cell"></div>
+            <div id="2-0" class="cell"></div>
+        </div>
+        <div class="row">
+            <div id="0-1" class="cell"></div>
+            <div id="1-1" class="cell"></div>
+            <div id="2-1" class="cell"></div>
+        </div>
+        <div class="row">
+            <div id="0-2" class="cell"></div>
+            <div id="1-2" class="cell"></div>
+            <div id="2-2" class="cell"></div>
+        </div>
+    </div>
+    <div id="message">
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+
+
+</html>
+index.html
+Displaying index.html.
