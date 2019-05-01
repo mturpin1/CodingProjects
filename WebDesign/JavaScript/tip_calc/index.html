@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'>
+    <style>
+        @keyframes shimmer {
+    0%   {background-color: #3a3a3a;}
+    50%  {background-color: #5c5c5c;}
+    100% {background-color: #3a3a3a;}
+}
+
+body {
+    animation: shimmer 10s infinite;
+}
+    </style>
+    <title>Bootstrap Boi</title>
+</head>
+<body>
+    <div class="card w-50 my-5 mx-auto text-center">
+        <h5 class="card-header">jQuery Tip Calculator</h5>
+        <div class="card-body">
+            <div class="row w-100 mx-auto">
+                What is the overall price?
+            </div>
+            <div class="row w-100 mx-auto text-center">
+                <input id='opi' type="number" class="form-control my-2"> <!-- overall price input -->
+            </div>
+            <hr>
+            <div class="row w-100 mx-auto mt-3 text-center">
+                How many people are splitting the bill?
+            </div>
+            <div class="row w-100 mx-auto text-center">
+                <input id='nopsi' type="number" class="form-control my-2"> <!-- # of people splitting input -->
+            </div>
+            <hr>
+            <div class="row w-100 mx-auto mt-3 text-center">
+                What percentage tip?
+            </div>
+            <div class="row w-100 mx-auto text-center">
+                <input id='ti' type="number" class="form-control my-2"> <!-- tip input -->
+            </div>
+            <div class="row">
+                <button id='cb' class="btn btn-success mx-auto my-3">Calculate!</button> <!-- calculate button -->
+            </div>
+            <hr>
+            <div class="row w-100 mx-auto text-center justify-content-center">
+                <div class="col">
+                    <div class="row w-100 text-center">
+                        Each person pays:&nbsp;<span id='wepp' class='font-weight-bold'></span> <!-- what each person pays -->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        Tip on bill:&nbsp;<span id='tttgotb' class='font-weight-bold'></span> <!-- the tip that goes on the bill -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row mx-auto">
+                Overall price:&nbsp;<span id='top' class="font-weight-bold"></span> <!-- the overall price -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' integrity='sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut' crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+</body>
+</html>
