@@ -3,6 +3,7 @@
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="low_poly_boot/scene.gltf">
 </head>
 <body>
     <a-scene>
@@ -43,9 +44,10 @@
             <a-text width='35' rotation='0 0 33' position='10.25 5.75 -4.4' value='BOMB!' color='black'></a-text>
         </a-entity>
         <a-entity id="yeet">
-            <a-box id="button" position='0 15 -5' color='red' opacity='0' width='10' height='2' depth='0.5'></a-box>
+            <a-box id="button" position='0 15 -5' color='cyan' opacity='0' width='10' height='2' depth='0.5'></a-box>
             <a-text id="btnText" position='-3.3 15 -4.6' color='black' opacity='0' width='20' height='20' value='Yeet Dat Bad Boi!'></a-text>
         </a-entity>    
+        <a-gltf-model src="low_poly_boot/scene.gltf" rotation='-30 270 30' scale='50 50 50' position='15 10 -5'></a-gltf-model>
         </a-scene>
     <script src='script.js'></script>
 </body>

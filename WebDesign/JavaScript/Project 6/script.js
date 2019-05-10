@@ -6,6 +6,6 @@ $('#triangleBoi').click(function() {
     console.log('yeet!')
 })
 
-$('#button').hover(function() {
-    $('#button').attr('animation', 'property: components.material.material.color; type: color; to: cyan; dur: 1500;')
+$('#button').click(function() {
+    
 })
