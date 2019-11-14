@@ -1,6 +1,6 @@
 import os
 numberOfTicks = int(input("Input the number of ticks that can be used:   "))
-iterations = 100 * ((numberOfTicks / 2) - (numberOfTicks % 2))
+iterations = (((10) ^ (((numberOfTicks) / 2)) - ((numberOfTicks) % 2))) + 100))
 ticksPerNumber = {0: 6, 1: 2, 2: 5, 3: 5, 4: 4, 5: 5, 6: 6, 7: 3, 8: 7, 9: 6}
 uniqueNumbers = []
 startingNumber = 0
