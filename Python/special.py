@@ -4,7 +4,7 @@ import random
 wn = turtle.Screen()
 wn.bgcolor('black')
 Albert = turtle.Turtle()
-Albert.speed(0)
+Albert.speed(10000)
 Albert.color('white')
 rotate=int(360)
 def drawCircles(t,size):

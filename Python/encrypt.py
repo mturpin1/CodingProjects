@@ -7,4 +7,4 @@ for letter in plainText:
     index = alphabet.find(letter)
     encryptedText += (alphabet[(index + key) % 26])
 os.system('cls')
-print(f'Here is your encrypted text - {encryptedText}')
+print(encryptedText)
