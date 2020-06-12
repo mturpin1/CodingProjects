@@ -29,4 +29,4 @@ for char in name:
         newName += (weirdSounds[(index + changeNumber) % len(weirdSounds)])
     else:
         newName += char
-print('Your new name is ' + newName)
+print('Your new name is ' + newName.capitalize())
