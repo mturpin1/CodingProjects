@@ -1,6 +1,7 @@
 import os
 import time
 import random
+import sys
 def rules():
         rule = raw_input('''To view the rules, press \'Enter\'.
 To skip the rules, type \'skip\', then press \'Enter\'. . .''').lower()
@@ -9,8 +10,9 @@ To skip the rules, type \'skip\', then press \'Enter\'. . .''').lower()
             print('*gameplay goes here*')
             for x in range(50):
                 for x in range(75):
+                    time.sleep(0.01)
                     number = random.randint(0, 9)
-                    print(f'{number}', end = '')
+                    sys.stdout.write('{}'.format(number))
             #gameplay()
         elif rule == '':
             os.system('clear')
