@@ -14,7 +14,7 @@ soup = BeautifulSoup(requests.get(url).text, 'lxml') #pyulls date from webpage, 
 
 pseudoPi = soup.find('div', {"id": "million_pi"}) #finds the <div> tag in the webpage with the id of 'million_pi'
 
-pi = str(pseudoPi) #sets variable 'pi' to a string version of the data just pulled
+pi = float(pseudoPi) #sets variable 'pi' to a string version of the data just pulled
 
 plainText = ' !\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~' 
 text = input('Please input the text you want encrypted:   ')
@@ -33,13 +33,13 @@ encryptedText = '' #empty str var, where the 'for' loop throws the encrypted tex
 newPiNum = 0 #sets the new Pi iteration number to 0 for the following loop
 
 for char in text: #runs the loop for as many characters are in the 'text' var
-    if newPi[newPiNum] == '.': #if 'newPi[newPiNum]' is anything other than a digit. . .
+    if newPi[newPiNum] == '.': #checks if 'newPi[newPiNum]' is a period. . .
         encryptedText += 'n' #adds a '0' to the 'encryptedText' var, for checking purposes
         newPiNum =+ 1 #adds a '0' to the 'newPiNume' var, in order to keep iterating through the digits of the 'newPi' var
-    elif isdigit(newPi[newPiNum]): #checks if the number in 'newPi' var the with the index 'newPiNum' is a number
+    else: #checks if the number in 'newPi' var the with the index 'newPiNum' is a number
         '''encryptionNumber = (int(newPi[newPiNum])) 
         index = plainText.find(char)
-        encryptedText += (plainText[(index + encryptionNumber + timeBoi) % 95])'''
+        encryptedText += (plainText[(index + encryptionNumber + timeBoi)] % 95)'''
         encryptedText += 'y' #if the character is a digit, add a '1' to the 'encryptedText' var, for checking purposes
         newPiNum += 1 #add a '1' to the 'newPiNum' var, in order to keep iterating through the digits of the 'newPi' var
 
