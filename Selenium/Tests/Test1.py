@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 import time 
 
+
 chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--windows-size=1920x1080')
