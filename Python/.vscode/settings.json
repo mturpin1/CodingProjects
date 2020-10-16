@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3",
+    "python.pythonPath": "C:\\Users\\techies\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
     "python.terminal.activateEnvironment": false,
     "code-runner.executorMap.python": "python3 -u"
 }
