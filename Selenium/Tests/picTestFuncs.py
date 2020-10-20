@@ -23,7 +23,7 @@ def label():
     button2 = tk.Button(root, text = picTestVars.defaultReviveBtnTxt, command = lambda : [bring_back_widget(label), root.focus_set()])
     userEntry = tk.Entry(root, text = 'Enter the text you want displayed. . .')
     entryButton = tk.Button(root, text = 'Print entry to terminal. . .', command = lambda : print(userEntry.get()))
-    updateButton = tk.Button(root, text = picTestVars.defaultUpdateBtnTxt, command = lambda : [update_string(userEntry.get(), label), print(userEntry.get()), userEntry.delete(0, END), root.focus_set()])
+    updateButton = tk.Button(root, text = picTestVars.defaultUpdateBtnTxt, command = lambda : [update_string(userEntry.get(), label), userEntry.delete(0, END), root.focus_set()])
     label.pack()
     button1.pack()
     button2.pack()
